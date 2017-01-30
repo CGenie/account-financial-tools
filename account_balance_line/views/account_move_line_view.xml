@@ -22,7 +22,7 @@
         <field name="inherit_id" ref="account.view_move_line_tree"/>
         <field name="arch" type="xml">
             <field name="credit" position="after" >
-                <field name="line_balance" sum="Total Balance" invisible="context.get('invisible_balance', True)"/>
+                <field name="line_balance" sum="Total Balance" invisible="context.get('invisible_balance', False)"/>
             </field>
         </field>
     </record>
